@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-config-server/springcloud-config-server.iml" filepath="$PROJECT_DIR$/springcloud-config-server/springcloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" filepath="$PROJECT_DIR$/springcloud-eureka-server/springcloud-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-example.iml" filepath="$PROJECT_DIR$/springcloud-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-service-consumer/springcloud-service-consumer.iml" filepath="$PROJECT_DIR$/springcloud-service-consumer/springcloud-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-service-provider/springcloud-service-provider.iml" filepath="$PROJECT_DIR$/springcloud-service-provider/springcloud-service-provider.iml" />
+    </modules>
+  </component>
+</project>
