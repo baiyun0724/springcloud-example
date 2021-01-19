@@ -5,8 +5,24 @@ spring:
     config:
       server:
         git:
-          uri: ${config.repo.uri:https://github.com/baiyun0724/springcloud-example}
-          searchPaths: spring-config-repo
+          uri: https://github.com/baiyun0724/springcloud-example
+          search-paths: springcloud-config-repo
+          # 本地config-repo存储位置指定
+          basedir: H:\\framework-example\\springcloud-example\\native-config-repo\\
+          # 默认分支名称
+          default-label: main
+
+
 
 server:
   port: 8888
+# 刷新时关闭安全验证
+management:
+  security:
+    enabled: false
+
+# spring.cloud.config.server.git.uri指向的是配置文件所在的git项目uri
+# search-paths指定的是匹配查询的路径名
+
+#向服务注册中心注册服务
+# eureka.client.service-url.defaultZone=http://localhost:1110/eureka/
