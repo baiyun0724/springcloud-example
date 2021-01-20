@@ -16,6 +16,7 @@
     <module>springcloud-config-client</module>
     <module>springcloud-ribbon-client</module>
     <module>springcloud-service-provider2</module>
+    <module>springcloud-feign-client</module>
   </modules>
 
   <name>springcloud-example</name>
