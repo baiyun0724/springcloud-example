@@ -1,0 +1,31 @@
+server:
+  port: 2010
+  context-path: /
+
+spring:
+  application:
+    name: springcloud-hystrix
+
+feign:
+  client:
+    config:
+      default:
+        connectionTimeout: 5000
+        readTimeout: 2000
+
+eureka:
+  instance:
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: springcloud-hystrix  #客户端服务名
+    instance-id: springcloud-hystrix:2010 #客户端实例名称
+    prefer-ip-address: true #显示IP
+  client:
+    service-url:
+      defaultZone: http://localhost:2001/eureka #把服务注册到eureka注册中心
+
+info:
+    groupId: com.baiyun
+    artifactId: springcloud-hystrix
+    version: 1.0.0
+    负责人: abcabc
+    联系电话: 11111111

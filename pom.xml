@@ -18,6 +18,7 @@
     <module>springcloud-service-provider2</module>
     <module>springcloud-feign-client</module>
     <module>springcloud-zuul-gateway</module>
+    <module>springcloud-hystrix</module>
   </modules>
 
   <name>springcloud-example</name>
