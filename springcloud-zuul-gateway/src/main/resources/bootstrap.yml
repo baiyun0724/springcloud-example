@@ -1,0 +1,45 @@
+server:
+  port: 2002
+  context-path: /
+
+spring:
+  application:
+    name: springcloud-zuul-gateway
+
+eureka:
+  instance:
+    hostname: localhost  #eureka客户端主机实例名称
+    appname: springcloud-zuul-gateway  #客户端服务名
+    instance-id: springcloud-zuul-gateway:2002 #客户端实例名称
+    prefer-ip-address: true #显示IP
+  client:
+    service-url:
+      defaultZone: http://localhost:2001/eureka #把服务注册到eureka注册中心
+
+zuul:
+  host: # 针对项目启动时，首次访问超时的问题
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+  routes:
+    feign:
+      path: /feign/**
+      serviceId: springcloud-feign-client
+      stripPrefix: true        # 是否移除前缀，默认为true
+    ribbon:
+      path: /ribbon/**
+      serviceId: springcloud-ribbon-client
+      stripPrefix: true        # 是否移除前缀，默认为true
+  ratelimit:
+      enabled: true #启用开关
+      behind-proxy: true #表示代理之后
+      default-policy: #全局限流策略，可单独细化到服务粒度
+        # 60s内请求超过3次，服务端就抛出异常，60s后可以恢复正常请求
+        limit: 3 #在一个单位时间窗口的请求数量
+        refresh-interval: 60
+      policies:
+        feign: #对feign进行特殊配置，要和routes中对应
+          limit: 5 #可选- 每个刷新时间窗口对应的请求数量限制
+          quota: 5 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+          efresh-interval: 10 # 刷新时间窗口的时间，默认值 (秒)
+          # 上述配置代表对springcloud-feign-client的服务进行限流
+          # 10秒内请求数量不得大于 5 次，这 5 次请求总时长不能大于 5秒

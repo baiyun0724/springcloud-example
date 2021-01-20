@@ -17,6 +17,7 @@
     <module>springcloud-ribbon-client</module>
     <module>springcloud-service-provider2</module>
     <module>springcloud-feign-client</module>
+    <module>springcloud-zuul-gateway</module>
   </modules>
 
   <name>springcloud-example</name>

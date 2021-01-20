@@ -6,3 +6,4 @@ springcloud-service-provider   ===》 1008
 springcloud-service-provider2  ===》 1009
 springcloud-ribbon-client      ===》 2008
 springcloud-feign-client       ===》 2009
+springcloud-zuul-gateway       ===》 2002
