@@ -29,6 +29,9 @@ zuul:
       stripPrefix: true        # 是否移除前缀，默认为true
 ```
 
+* 配置Zuul的服务降级
+> * com.baiyun.fallback.ServiceFallbackProvider.java
+
 * 配置限流
 
 ```

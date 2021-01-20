@@ -1,3 +1,6 @@
+***************************
+*   对应各模块中的端口号  *
+***************************
 springcloud-config-client      ===》 8083
 springcloud-config-server      ===》 8888
 springcloud-eureka-server      ===》 2001
