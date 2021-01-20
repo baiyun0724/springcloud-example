@@ -1,16 +1,12 @@
 server:
-  port: 1008
+  port: 2008
   context-path: /
-
-spring:
-  application:
-    name: springcloud-service-provider
 
 eureka:
   instance:
     hostname: localhost  #eureka客户端主机实例名称
-    appname: springcloud-service-provider  #客户端服务名
-    instance-id: springcloud-service-provider:1008 #客户端实例名称
+    appname: springcloud-ribbon-client  #客户端服务名
+    instance-id: springcloud-ribbon-client:2008 #客户端实例名称
     prefer-ip-address: true #显示IP
   client:
     service-url:
@@ -18,8 +14,7 @@ eureka:
 
 info:
     groupId: com.baiyun
-    artifactId: springcloud-service-provider
+    artifactId: springcloud-ribbon-client
     version: 1.0.0
     负责人: abcabc
     联系电话: 11111111
-

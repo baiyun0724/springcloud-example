@@ -1,0 +1,7 @@
+springcloud-config-client      ===》 8083
+springcloud-config-server      ===》 8888
+springcloud-eureka-server      ===》 2001
+springcloud-service-consumer   ===》 80
+springcloud-service-provider   ===》 1008
+springcloud-service-provider2  ===》 1009
+springcloud-ribbon-client      ===》 2008

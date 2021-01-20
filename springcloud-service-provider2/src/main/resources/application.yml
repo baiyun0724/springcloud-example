@@ -1,5 +1,5 @@
 server:
-  port: 1008
+  port: 1009
   context-path: /
 
 spring:
@@ -10,7 +10,7 @@ eureka:
   instance:
     hostname: localhost  #eureka客户端主机实例名称
     appname: springcloud-service-provider  #客户端服务名
-    instance-id: springcloud-service-provider:1008 #客户端实例名称
+    instance-id: springcloud-service-provider:1009 #客户端实例名称
     prefer-ip-address: true #显示IP
   client:
     service-url:

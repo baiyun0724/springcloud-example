@@ -11,9 +11,11 @@
   <modules>
     <module>springcloud-config-server</module>
     <module>springcloud-eureka-server</module>
-      <module>springcloud-service-provider</module>
+    <module>springcloud-service-provider</module>
     <module>springcloud-service-consumer</module>
     <module>springcloud-config-client</module>
+    <module>springcloud-ribbon-client</module>
+    <module>springcloud-service-provider2</module>
   </modules>
 
   <name>springcloud-example</name>

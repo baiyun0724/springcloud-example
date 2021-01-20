@@ -1,5 +1,5 @@
-# config-server
-演示配置中心
+# springcloud-config-server
+配置中心
 Spring Cloud Config Server用于管理Git或SVN等配置，当其收到来自客户端的配置获取请求后，会将远程仓库的配置clone到本地的临时目录，然后从本地读取配置并返回。
 
 | method | url | desc |
@@ -27,7 +27,7 @@ spring:
       server:
         git:
           uri: https://github.com/baiyun0724/springcloud-example
-          search-paths: config-repo
+          search-paths: springcloud-config-repo
 
 server:
   port: 8888

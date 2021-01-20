@@ -10,7 +10,7 @@ public class ProviderController {
 
     @GetMapping("hello")
     public String hello(){
-        return "springcloud-service-provider  :  hello world";
+        return "springcloud-service-provider2  :  hello world";
     }
 
 }
