@@ -3,7 +3,7 @@ Eureka服务注册中心
 
 | method | url | desc |  
 |:--- | :--- | :--- |   
-| GET | http://localhost:8761 | 服务注册中心 |  
+| GET | http://localhost:2001 | 服务注册中心 |  
 
 
 ## 启用Eureka Server  
